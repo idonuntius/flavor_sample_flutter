@@ -1,22 +1,21 @@
 enum Flavor {
-  DEVELOPMENT,
-  PRODUCTION,
+  development,
+  production,
 }
 
-class F {
+class FlavorUtil {
   static Flavor? appFlavor;
 
   static String get name => appFlavor?.name ?? '';
 
   static String get title {
     switch (appFlavor) {
-      case Flavor.DEVELOPMENT:
+      case Flavor.development:
         return 'FlavorSample.dev';
-      case Flavor.PRODUCTION:
+      case Flavor.production:
         return 'FlavorSample.prod';
       default:
         return 'title';
     }
   }
-
 }

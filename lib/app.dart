@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: F.title,
+      title: FlavorUtil.title,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -27,7 +27,7 @@ class App extends StatelessWidget {
           ? Banner(
               child: child,
               location: BannerLocation.topStart,
-              message: F.name,
+              message: FlavorUtil.name,
               color: Colors.green.withOpacity(0.6),
               textStyle: TextStyle(fontWeight: FontWeight.w700, fontSize: 12.0, letterSpacing: 1.0),
               textDirection: TextDirection.ltr,
